@@ -125,5 +125,27 @@ A JavaScript function performing custom action with defined HTML template to ren
      trigger-text="HTML code">
 </div>
 
+###### Display dialog to clone device
+
+<br>
+
+<div style="padding-left: 64px;"
+     tb-help-popup="widget/action/examples/custom_pretty_clone_device_js"
+     tb-help-popup-placement="top"
+     [tb-help-popup-style]="{maxHeight: '50vh', maxWidth: '50vw'}"
+     trigger-style="font-size: 16px;"
+     trigger-text="JavaScript function">
+</div>
+
+<br>
+
+<div style="padding-left: 64px;"
+     tb-help-popup="widget/action/examples/custom_pretty_clone_device_html"
+     tb-help-popup-placement="top"
+     [tb-help-popup-style]="{maxHeight: '50vh', maxWidth: '50vw'}"
+     trigger-style="font-size: 16px;"
+     trigger-text="HTML code">
+</div>
+
 <br>
 <br>
