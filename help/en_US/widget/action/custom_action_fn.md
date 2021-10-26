@@ -81,3 +81,102 @@ function deleteDevice() {
 }
 {:copy-code}
 ```
+
+* Open state conditionally with saving particular state parameters
+
+```javascript
+{:code-style="max-height: 300px;"}
+var entitySubType;
+var $injector = widgetContext.$scope.$injector;
+$injector.get(widgetContext.servicesMap.get('entityService')).getEntity(entityId.entityType, entityId.id)
+  .subscribe(function(data) {
+    entitySubType = data.type;
+    if (entitySubType == 'energy meter') {
+      openDashboardStates('energy_meter_details_view');
+    } else if (entitySubType == 'thermometer') {
+      openDashboardStates('thermometer_details_view');
+    }
+});
+
+function openDashboardStates(statedId) {
+  var stateParams = widgetContext.stateController.getStateParams();
+  var params = {
+    entityId: entityId,
+    entityName: entityName
+  };
+
+  if (stateParams.city) {
+    params.city = stateParams.city;
+  }
+
+  widgetContext.stateController.openState(statedId, params, false);
+}
+{:copy-code}
+```
+
+* Go back to the first state, after this go to the target state
+
+```javascript
+{:code-style="max-height: 300px;"}
+var stateIndex = widgetContext.stateController.getStateIndex();
+while (stateIndex > 0) {
+  stateIndex -= 1;
+  backToPrevState(stateIndex);
+}
+openDashboardState('devices');
+
+function backToPrevState(stateIndex) {
+  widgetContext.stateController.navigatePrevState(stateIndex);
+}
+
+function openDashboardState(statedId) {
+  var currentState = widgetContext.stateController.getStateId();
+  if (currentState !== statedId) {
+    var params = {};
+    widgetContext.stateController.updateState(statedId, params, false);
+  }
+}
+{:copy-code}
+```
+
+* Copy device access token to buffer
+
+```javascript
+{:code-style="max-height: 300px;"}
+var $injector = widgetContext.$scope.$injector;
+var deviceService = $injector.get(widgetContext.servicesMap.get('deviceService'));
+var $translate = $injector.get(widgetContext.servicesMap.get('translate'));
+var $scope = widgetContext.$scope;
+if (entityId.id && entityId.entityType === 'DEVICE') {
+  deviceService.getDeviceCredentials(entityId.id, true).subscribe(
+    (deviceCredentials) => {
+      var credentialsId = deviceCredentials.credentialsId;
+      if (copyToClipboard(credentialsId)) {
+        $scope.showSuccessToast($translate.instant('device.accessTokenCopiedMessage'), 750, "top", "left");
+      }
+    }
+  );
+}
+
+function copyToClipboard(text) {
+  if (window.clipboardData && window.clipboardData.setData) {
+    return window.clipboardData.setData("Text", text);
+  }
+  else if (document.queryCommandSupported && document.queryCommandSupported("copy")) {
+    var textarea = document.createElement("textarea");
+    textarea.textContent = text;
+    textarea.style.position = "fixed";
+    document.body.appendChild(textarea);
+    textarea.select();
+    try {
+      return document.execCommand("copy");
+    }
+    catch (ex) {
+      console.warn("Copy to clipboard failed.", ex);
+      return false;
+    }
+    document.body.removeChild(textarea);
+  }
+}
+{:copy-code}
+```

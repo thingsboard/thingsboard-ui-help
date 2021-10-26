@@ -81,5 +81,49 @@ A JavaScript function performing custom action with defined HTML template to ren
      trigger-text="HTML code">
 </div>
 
+###### Display dialog to created new user
+
+<br>
+
+<div style="padding-left: 64px;"
+     tb-help-popup="widget/action/examples/custom_pretty_create_user_js"
+     tb-help-popup-placement="top"
+     [tb-help-popup-style]="{maxHeight: '50vh', maxWidth: '50vw'}"
+     trigger-style="font-size: 16px;"
+     trigger-text="JavaScript function">
+</div>
+
+<br>
+
+<div style="padding-left: 64px;"
+     tb-help-popup="widget/action/examples/custom_pretty_create_user_html"
+     tb-help-popup-placement="top"
+     [tb-help-popup-style]="{maxHeight: '50vh', maxWidth: '50vw'}"
+     trigger-style="font-size: 16px;"
+     trigger-text="HTML code">
+</div>
+
+###### Display dialog to add/edit image in entity attribute
+
+<br>
+
+<div style="padding-left: 64px;"
+     tb-help-popup="widget/action/examples/custom_pretty_edit_image_js"
+     tb-help-popup-placement="top"
+     [tb-help-popup-style]="{maxHeight: '50vh', maxWidth: '50vw'}"
+     trigger-style="font-size: 16px;"
+     trigger-text="JavaScript function">
+</div>
+
+<br>
+
+<div style="padding-left: 64px;"
+     tb-help-popup="widget/action/examples/custom_pretty_edit_image_html"
+     tb-help-popup-placement="top"
+     [tb-help-popup-style]="{maxHeight: '50vh', maxWidth: '50vw'}"
+     trigger-style="font-size: 16px;"
+     trigger-text="HTML code">
+</div>
+
 <br>
 <br>
