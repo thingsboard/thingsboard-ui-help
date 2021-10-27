@@ -71,7 +71,7 @@ return '<span style="font-size: 18px; color: ' + color + '">&#11044;</span>';
 {:copy-code}
 ```
 
-* Decimal value formatting (1196 => 1,196.0):
+* Decimal value format (1196 => 1,196.0):
 
 ```javascript
 var value = value / 1;

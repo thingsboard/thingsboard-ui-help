@@ -42,7 +42,7 @@ A JavaScript function performing custom action with defined HTML template to ren
 <br>
 
 <div style="padding-left: 64px;"
-     tb-help-popup="widget/action/examples/custom_pretty_create_dialog_js"
+     tb-help-popup="widget/action/examples_custom_pretty/custom_pretty_create_dialog_js"
      tb-help-popup-placement="top"
      [tb-help-popup-style]="{maxHeight: '50vh', maxWidth: '50vw'}"
      trigger-style="font-size: 16px;"
@@ -52,7 +52,7 @@ A JavaScript function performing custom action with defined HTML template to ren
 <br>
 
 <div style="padding-left: 64px;"
-     tb-help-popup="widget/action/examples/custom_pretty_create_dialog_html"
+     tb-help-popup="widget/action/examples_custom_pretty/custom_pretty_create_dialog_html"
      tb-help-popup-placement="top"
      [tb-help-popup-style]="{maxHeight: '50vh', maxWidth: '50vw'}"
      trigger-style="font-size: 16px;"
@@ -64,7 +64,7 @@ A JavaScript function performing custom action with defined HTML template to ren
 <br>
 
 <div style="padding-left: 64px;"
-     tb-help-popup="widget/action/examples/custom_pretty_edit_dialog_js"
+     tb-help-popup="widget/action/examples_custom_pretty/custom_pretty_edit_dialog_js"
      tb-help-popup-placement="top"
      [tb-help-popup-style]="{maxHeight: '50vh', maxWidth: '50vw'}"
      trigger-style="font-size: 16px;"
@@ -74,7 +74,7 @@ A JavaScript function performing custom action with defined HTML template to ren
 <br>
 
 <div style="padding-left: 64px;"
-     tb-help-popup="widget/action/examples/custom_pretty_edit_dialog_html"
+     tb-help-popup="widget/action/examples_custom_pretty/custom_pretty_edit_dialog_html"
      tb-help-popup-placement="top"
      [tb-help-popup-style]="{maxHeight: '50vh', maxWidth: '50vw'}"
      trigger-style="font-size: 16px;"
@@ -86,7 +86,7 @@ A JavaScript function performing custom action with defined HTML template to ren
 <br>
 
 <div style="padding-left: 64px;"
-     tb-help-popup="widget/action/examples/custom_pretty_create_user_js"
+     tb-help-popup="widget/action/examples_custom_pretty/custom_pretty_create_user_js"
      tb-help-popup-placement="top"
      [tb-help-popup-style]="{maxHeight: '50vh', maxWidth: '50vw'}"
      trigger-style="font-size: 16px;"
@@ -96,7 +96,7 @@ A JavaScript function performing custom action with defined HTML template to ren
 <br>
 
 <div style="padding-left: 64px;"
-     tb-help-popup="widget/action/examples/custom_pretty_create_user_html"
+     tb-help-popup="widget/action/examples_custom_pretty/custom_pretty_create_user_html"
      tb-help-popup-placement="top"
      [tb-help-popup-style]="{maxHeight: '50vh', maxWidth: '50vw'}"
      trigger-style="font-size: 16px;"
@@ -108,7 +108,7 @@ A JavaScript function performing custom action with defined HTML template to ren
 <br>
 
 <div style="padding-left: 64px;"
-     tb-help-popup="widget/action/examples/custom_pretty_edit_image_js"
+     tb-help-popup="widget/action/examples_custom_pretty/custom_pretty_edit_image_js"
      tb-help-popup-placement="top"
      [tb-help-popup-style]="{maxHeight: '50vh', maxWidth: '50vw'}"
      trigger-style="font-size: 16px;"
@@ -118,7 +118,7 @@ A JavaScript function performing custom action with defined HTML template to ren
 <br>
 
 <div style="padding-left: 64px;"
-     tb-help-popup="widget/action/examples/custom_pretty_edit_image_html"
+     tb-help-popup="widget/action/examples_custom_pretty/custom_pretty_edit_image_html"
      tb-help-popup-placement="top"
      [tb-help-popup-style]="{maxHeight: '50vh', maxWidth: '50vw'}"
      trigger-style="font-size: 16px;"
@@ -130,7 +130,7 @@ A JavaScript function performing custom action with defined HTML template to ren
 <br>
 
 <div style="padding-left: 64px;"
-     tb-help-popup="widget/action/examples/custom_pretty_clone_device_js"
+     tb-help-popup="widget/action/examples_custom_pretty/custom_pretty_clone_device_js"
      tb-help-popup-placement="top"
      [tb-help-popup-style]="{maxHeight: '50vh', maxWidth: '50vw'}"
      trigger-style="font-size: 16px;"
@@ -140,7 +140,7 @@ A JavaScript function performing custom action with defined HTML template to ren
 <br>
 
 <div style="padding-left: 64px;"
-     tb-help-popup="widget/action/examples/custom_pretty_clone_device_html"
+     tb-help-popup="widget/action/examples_custom_pretty/custom_pretty_clone_device_html"
      tb-help-popup-placement="top"
      [tb-help-popup-style]="{maxHeight: '50vh', maxWidth: '50vw'}"
      trigger-style="font-size: 16px;"

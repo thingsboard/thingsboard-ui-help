@@ -36,7 +36,7 @@ return value.toFixed(2) + ' A';
 {:copy-code}
 ```
 
-* Present the datapoint value in decimal formatting (1196 => 1,196.0):
+* Present the datapoint value in decimal format (1196 => 1,196.0):
 
 ```javascript
 var value = value / 1;
