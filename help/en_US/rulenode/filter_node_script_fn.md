@@ -29,13 +29,17 @@ return msg.temperature > 20;
 {:copy-code}
 ```
 
+
+Example of the rule chain configuration:
+
+![image](${helpBaseUrl}/help/images/rulenode/examples/filter-node.png)
+
 * Same as above, but checks that the message has 'temperature' field to **avoid failures** on unexpected messages:
 
 ```javascript
 return typeof msg.temperature !== 'undefined' && msg.temperature > 20;
 {:copy-code}
 ```
-
 
 * Forward all messages with type `ATTRIBUTES_UPDATED` to the **True** chain and all other messages to the **False** chain:
 
