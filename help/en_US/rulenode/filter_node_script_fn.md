@@ -13,7 +13,7 @@ JavaScript function defines a boolean expression based on the incoming Message a
 
 **Returns:**
 
-Must return a `boolean` value. If `true` - sends Message to subsequent rule nodes that are related via **True** link, 
+Must return a `boolean` value. If `true` - routes Message to subsequent rule nodes that are related via **True** link, 
 otherwise sends Message to rule nodes related via **False** link. 
 Uses 'Failure' link in case of any failures to evaluate the expression.
 
