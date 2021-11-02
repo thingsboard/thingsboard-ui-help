@@ -40,6 +40,16 @@ A JavaScript function performing custom action.
 <br>
 
 <div style="padding-left: 32px;"
+     tb-help-popup="widget/action/examples_custom_action/custom_action_return_previous_state"
+     tb-help-popup-placement="top"
+     [tb-help-popup-style]="{maxHeight: '50vh', maxWidth: '50vw'}"
+     trigger-style="font-size: 16px;"
+     trigger-text="Return to the previous state">
+</div>
+
+<br>
+
+<div style="padding-left: 32px;"
      tb-help-popup="widget/action/examples_custom_action/custom_action_open_state_save_parameters"
      tb-help-popup-placement="top"
      [tb-help-popup-style]="{maxHeight: '50vh', maxWidth: '50vw'}"
