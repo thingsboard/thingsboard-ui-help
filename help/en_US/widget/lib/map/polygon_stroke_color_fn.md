@@ -1,11 +1,11 @@
-#### Path color function
+#### Polygon stroke color function
 
 <div class="divider"></div>
 <br/>
 
 *function (data, dsData): string*
 
-A JavaScript function used to compute color of the trip path.
+A JavaScript function used to compute stroke color of the polygon.
 
 **Parameters:**
 
@@ -15,7 +15,7 @@ A JavaScript function used to compute color of the trip path.
 
 **Returns:**
 
-Should return string value presenting color of the trip path.
+Should return string value presenting stroke color of the polygon.
 
 In case no data is returned, color value from **Color** settings field will be used.
 

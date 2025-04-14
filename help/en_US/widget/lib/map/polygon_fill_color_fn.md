@@ -1,11 +1,11 @@
-#### Path color function
+#### Polygon fill color function
 
 <div class="divider"></div>
 <br/>
 
 *function (data, dsData): string*
 
-A JavaScript function used to compute color of the trip path.
+A JavaScript function used to compute fill color of the polygon.
 
 **Parameters:**
 
@@ -15,7 +15,7 @@ A JavaScript function used to compute color of the trip path.
 
 **Returns:**
 
-Should return string value presenting color of the trip path.
+Should return string value presenting fill color of the polygon.
 
 In case no data is returned, color value from **Color** settings field will be used.
 

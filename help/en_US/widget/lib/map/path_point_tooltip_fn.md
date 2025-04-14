@@ -1,11 +1,11 @@
-#### Marker tooltip function
+#### Path point tooltip function
 
 <div class="divider"></div>
 <br/>
 
 *function (data, dsData): string*
 
-A JavaScript function used to compute text or HTML code to be displayed in the marker tooltip.
+A JavaScript function used to compute text or HTML code to be displayed in the trip path point tooltip.
 
 **Parameters:**
 

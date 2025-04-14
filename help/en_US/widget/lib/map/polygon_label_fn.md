@@ -1,11 +1,11 @@
-#### Marker label function
+#### Polygon label function
 
 <div class="divider"></div>
 <br/>
 
 *function (data, dsData): string*
 
-A JavaScript function used to compute text or HTML code of the marker label.
+A JavaScript function used to compute text or HTML code of the polygon label.
 
 **Parameters:**
 
@@ -15,7 +15,7 @@ A JavaScript function used to compute text or HTML code of the marker label.
 
 **Returns:**
 
-Should return string value presenting text or HTML of the marker label.
+Should return string value presenting text or HTML of the polygon label.
 
 <div class="divider"></div>
 

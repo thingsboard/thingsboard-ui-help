@@ -3,7 +3,7 @@
 <div class="divider"></div>
 <br/>
 
-*function (origXPos, origYPos, data, dsData, aspect): {x: number, y: number}*
+*function (origXPos, origYPos, data, dsData, dsIndex, aspect): {x: number, y: number}*
 
 A JavaScript function used to convert original relative x, y coordinates of the marker.
 
@@ -12,7 +12,7 @@ A JavaScript function used to convert original relative x, y coordinates of the 
 <ul>
   <li><b>origXPos:</b> <code>number</code> - original relative x coordinate as double from 0 to 1.</li>
   <li><b>origYPos:</b> <code>number</code> - original relative y coordinate as double from 0 to 1.</li>
-  {% include widget/lib/map/map_fn_args %}
+  {% include widget/lib/map-legacy/map_fn_args %}
   <li><b>aspect:</b> <code>number</code> - image map aspect ratio.</li>
 </ul>
 
@@ -22,8 +22,8 @@ Should return position data having the following structure:
 
 ```typescript
 { 
-   x: number;
-   y: number;
+   x: number,
+   y: number
 }
 ```
 
